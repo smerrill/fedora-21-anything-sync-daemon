@@ -1,7 +1,7 @@
 Name:              anything-sync-daemon 
 Version:           5.65
 Release:           1%{?dist}
-Summary:           Offload any directories to RAM for speed a wear reduction
+Summary:           Offload any directories to RAM for speed and wear reduction
 License:           MIT
 URL:               https://github.com/graysky2/anything-sync-daemon 
 Source0:           https://github.com/graysky2/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
@@ -14,7 +14,7 @@ Requires(postun):  systemd
 
 %description
 Symlinks and syncs arbitrary directories to RAM via tmpfs which will reduce
-HDD/SDD calls and speed-up browsers.
+HDD/SDD calls.
 
 %prep
 %setup -q
