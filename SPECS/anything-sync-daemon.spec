@@ -1,5 +1,5 @@
-Name:              anything-sync-daemon 
-Version:           5.65
+Name:              anything-sync-daemon
+Version:           5.76
 Release:           1%{?dist}
 Summary:           Offload any directories to RAM for speed and wear reduction
 License:           MIT
@@ -46,7 +46,12 @@ fi
 %{_bindir}/*
 %{_mandir}/man1/*.1*
 %{_unitdir}/asd*.*
+%{_prefix}/share/bash-completion/completions/asd
+%{_prefix}/share/zsh/site-functions/_asd
 
 %changelog
+* Sun Nov 29 2015 Steven Merrill <steven.merrill@gmail.com> - 5.76-1
+- Bump asd version, install bash/zsh completion.
+
 * Sat Jan 24 2015 Steven Merrill <steven.merrill@gmail.com> - 5.65-1
 - Initial RPM release
