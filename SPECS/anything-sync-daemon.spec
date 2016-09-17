@@ -1,10 +1,10 @@
 Name:              anything-sync-daemon
-Version:           5.76
-Release:           2%{?dist}
+Version:           5.83
+Release:           1%{?dist}
 Summary:           Offload any directories to RAM for speed and wear reduction
 License:           MIT
-URL:               https://github.com/graysky2/anything-sync-daemon 
-Source0:           https://github.com/graysky2/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+URL:               https://github.com/graysky2/anything-sync-daemon
+Source0:           https://github.com/graysky2/%{name}/archive/v%{version}.tar.gz
 BuildArch:         noarch
 BuildRequires:     systemd
 Requires:          rsync
@@ -51,6 +51,9 @@ fi
 %{_prefix}/share/zsh/site-functions/_asd
 
 %changelog
+* Sat Sep 17 2016 Steven Merrill <steven.merrill@gmail.com> - 5.83-1
+- Update to 5.83.
+
 * Sun Nov 29 2015 Steven Merrill <steven.merrill@gmail.com> - 5.76-2
 - Move the license file to %license per bz 1185550.
 
